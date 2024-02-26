@@ -1,0 +1,21 @@
+
+foundary provide a way to create address
+so that we can send transaction from that address 
+
+address add = makeAddr('testAddress')
+
+the before transaction 
+vm.prank(add)
+
+but the problem with the this address is that this does not have any balance
+so we use another cheat code  ''   deal   ''
+vm.deal(add, 1 ether);
+
+we can use hoax cheatcode to do prank and deal  
+
+we can chisel to run solidity in cli
+
+
+
+
+forge snapshot -mt testWithdrawFr   ->>>>> use this command to get the gas report of test
